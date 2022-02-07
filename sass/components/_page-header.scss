@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid var(--border-card-color);
+}
+
+.page-header__container {
+  @include align();
+}
+
+.page-header__nav {
+  display: flex;
+}

@@ -1,0 +1,36 @@
+@mixin margin($top:0, $left:auto, $bottom:0, $right:auto) {
+margin-top: $top;
+margin-left: $left;
+margin-bottom: $bottom;
+margin-right: $right;    
+}
+
+@mixin font($fs:500, $fw:14px, $lh:1.14, $ls:0.02em) {
+    font-weight: $fs;
+    font-size: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;  
+}
+
+@mixin align($dp:flex, $ali:center) {
+    display: $dp;
+    align-items: $ali;
+}
+
+@mixin mob {
+    @media screen and (min-width:480px) {
+        @content;
+        }
+}
+
+@mixin tab {
+    @media screen and (min-width:768px) {
+        @content;
+        }
+}
+
+@mixin desk {
+    @media screen and (min-width:1200px) {
+        @content;
+        }
+}

@@ -1,0 +1,23 @@
+
+.contact-card {
+  list-style: none;
+}
+
+.contact-card__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+
+.contact-card__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+.contact-card__text--inversion {
+
+
+
+  color: var(--third-text-color);
+}

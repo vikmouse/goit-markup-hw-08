@@ -1,0 +1,17 @@
+.section {
+  padding-top: 7vmin;
+  padding-bottom: 7vmin;
+  @include mob{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
+.section--zero-top {
+  padding-top: 0;
+}
+
+.section--inversion {
+  background-color: var(--background-team-color);
+}

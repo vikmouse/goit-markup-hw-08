@@ -1,0 +1,32 @@
+.list-contact {
+  @include align();
+  margin-left: auto;
+  list-style: none;
+}
+
+.list-contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include font();
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.link-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* .list-contact .link-contact__current {
+  color: var(--accent-color);
+} */

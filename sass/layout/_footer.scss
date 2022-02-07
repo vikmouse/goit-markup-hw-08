@@ -1,0 +1,27 @@
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-page-color);
+}
+
+.footer__logo {
+  display: block;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.footer-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__footer-wrapper {
+  margin-right: 93px;
+  margin-left: 70px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
