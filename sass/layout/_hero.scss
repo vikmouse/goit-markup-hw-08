@@ -8,36 +8,122 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/hero-bg.jpg);
+    url(../image/hero-bg-1xmob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg-2xmob.jpg);
+  }
   @include mob {
-    height: 400;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 400px;
     padding-top: 118px;
-    padding-bottom: 118px;
+    padding-bottom: 180px;
+    background-color: var(--background-page-color);
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg-1xmob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg-2xmob.jpg);
+    }
+  
   }
   @include tab {
-    
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg-1xtab.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg-2xtab.jpg);
+    }
+  }
+  @include desk {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero-bg2x.jpg);
+    }
   }
 }
 
 
 .hero__title {
 
-    margin-bottom: 3vmin;
-    font-weight: 900;
-    font-size: 5vmin;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--main-title-color);
-    @media screen and (min-width:480px) {
-    margin-bottom: 30px;
-    font-size: 26px;
-    line-height: 1.62;
-    }
+  margin-bottom: 3vmin;
+  font-weight: 900;
+  font-size: 5vmin;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  @include mob {
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
+  }
+  @include tab {
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;  
+  }
+  @include desk {
+  margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 116%;
+  }
 }
 
 .hero__button {
