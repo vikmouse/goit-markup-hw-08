@@ -74,8 +74,8 @@
   @include desk {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
-    height: 600px;
+    width: 100vmax;
+    height: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(

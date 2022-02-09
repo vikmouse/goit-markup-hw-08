@@ -6,13 +6,18 @@
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    &_item {
-      flex-basis: calc(100% / 2);
+    &__item {
+      flex-basis: calc(100% / 2 - 30px);
     }
   }
   @include desk {
     flex-wrap: nowrap;
-      }
+    margin-bottom: 0;
+    margin-right: -30px;
+    &__item {
+      flex-basis: none;  
+    }
+  }
 }
 
 
