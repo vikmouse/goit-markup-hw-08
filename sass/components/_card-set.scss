@@ -1,7 +1,31 @@
 
 .card-set {
-  display: flex;
   list-style: none;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    &__item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  @include desk {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    &__item {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+  }
+  
+
 }
 
 
@@ -14,9 +38,7 @@
 }
 
 
-.card-set__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
+
 
 /* ..................обвёртка сотрудников....................... */
 

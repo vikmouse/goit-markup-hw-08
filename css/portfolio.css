@@ -129,6 +129,12 @@ body {
   background-color: var(--accent-color);
 }
 
+.social-set--centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container {
   margin-top: 0;
   margin-left: auto;
@@ -177,7 +183,14 @@ body {
 }
 
 .section--zero-top {
-  padding-top: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section--zero-top {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .section--inversion {
@@ -254,14 +267,25 @@ body {
 }
 
 .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: #2196f3;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #2196f3;
+  }
 }
 
 .logo__half--dark {
@@ -533,35 +557,76 @@ body {
 
 .footer__logo {
   display: block;
-  padding: 0;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    display: block;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
 }
 
 .footer-wrapper {
-  margin: 0;
+  margin-bottom: 60px;
   padding: 0;
 }
 
-.footer__footer-wrapper {
-  margin-right: 93px;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    margin: 0;
+  }
 }
 
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer__footer-wrapper {
+    margin-right: 93px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer-wrapper--zero-bottom {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .contact-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
 .contact-card__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contact-card__text {
@@ -582,20 +647,29 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--third-text-color);
+  text-align: center;
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
 }
 
 .footer-form__input {
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
   padding: 15px 108px 15px 16px;
-  width: 358px;
+  width: 90vw;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -638,6 +712,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
+
 .footer-form__input:focus {
   border-color: var(--accent-color);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -645,7 +725,16 @@ body {
 }
 
 .footer-form__button {
-  margin-left: 12px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin-left: 12px;
+  }
 }
 
 .icon-send {

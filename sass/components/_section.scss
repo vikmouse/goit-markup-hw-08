@@ -13,7 +13,12 @@
 }
 
 .section--zero-top {
-  padding-top: 0;
+  display: none;
+  @include desk {
+    display: block;
+    padding-top: 0;
+  }
+  
 }
 
 .section--inversion {

@@ -1,8 +1,18 @@
 .heading {
-  margin-bottom: 50px;
+
+  margin-bottom: 6vmin;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 7vmin;
+  line-height: 1.18;
   text-align: center;
   color: var(--second-title-color);
+@include mob{
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+}
+  @include desk {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

@@ -24,8 +24,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 100vw;
+  height: 100vh;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -108,7 +108,7 @@
 }
 
 .form-group__input {
-  width: 448px;
+  width: 78vmin;
   height: 40px;
   padding-left: 44px;
   padding-right: 44px;
@@ -136,7 +136,7 @@
   justify-content: center;
 
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 2vmin;
   line-height: 1.71;
   color: #757575;
 }
@@ -149,12 +149,17 @@
   position: relative;
   @include align();
   justify-content: center;
-  width: 16px;
-  height: 15px;
+  width: 2vmin;
+  height: 2vmin;
   border: 1px solid #000;
   border-radius: 2px;
-  margin: 8px;
+  margin: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include mob {
+    width: 16px;
+    height: 15px;
+    margin: 8px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label {
@@ -167,14 +172,14 @@
 .checkbox__link {
   margin-left: 4px;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 3vmin;
   line-height: 1.71;
   color: var(--accent-color);
 }
 
 .comment {
   padding: 12px 16px;
-  width: 100%;
+  width: 78vmin;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
