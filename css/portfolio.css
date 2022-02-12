@@ -267,12 +267,25 @@ body {
 }
 
 .menu-open-btn {
+  display: block;
   margin-left: auto;
+  border-style: none;
+  background-color: #ffffff;
 }
 
 .menu-close-btn {
   display: block;
   margin-left: auto;
+  border-style: none;
+  background-color: #ffffff;
+}
+
+.menu-icon {
+  fill: var(--main-text-color);
+}
+
+.menu-icon:hover, .menu-icon:focus {
+  fill: var(--accent-color);
 }
 
 .mob-menu {
@@ -286,6 +299,7 @@ body {
 
 .mob-menu__container {
   height: 100%;
+  padding: 32px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +318,7 @@ body {
   }
 }
 
-.mob-menu is-hidden {
+.mob-menu.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -329,7 +343,7 @@ body {
 .mob-menu-list__link {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 13vmin;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
@@ -337,8 +351,14 @@ body {
   color: var(--second-title-color);
 }
 
-.mob-menu-list__link:hover {
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu-list__link {
+    font-size: 40px;
+  }
 }
 
 .mob-menu-list__link--curent {
@@ -350,10 +370,16 @@ body {
   margin-bottom: 32px;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vmin;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .menu-contact-tel {
+    font-size: 34px;
+  }
 }
 
 .menu-contact-mail {
@@ -365,6 +391,12 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .menu-contact-mail {
+    font-size: 24px;
+  }
 }
 
 .mob-social {
@@ -384,10 +416,16 @@ body {
 
 .mob-social__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 4vmin;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 480px) {
+  .mob-social__link {
+    font-size: 18px;
+  }
 }
 
 .logo {
