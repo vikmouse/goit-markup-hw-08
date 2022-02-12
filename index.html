@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <!-- <header class="page-header">
+  <header class="page-header"> 
     <div class="container page-header__container">
       <nav class="page-header__nav">
         <a class="link" href="">
@@ -53,8 +53,48 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open-btn" data-Menu-open>0</button>
     </div>
-    </header> -->
+    <div class="mob-menu is-hidden" data-Menu>
+      <button class="menu-close-btn" data-Menu-close>X</button>
+      <div class="container mob-menu__container">
+      <div class="mob-menu-top">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link mob-menu-list__link--curent" href="">Студия </a>
+          </li>
+  
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link" href="./portfolio.html">Портфолио
+            </a>
+          </li>
+  
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link" href="">Контакты </a>
+          </li>
+        </ul>
+      </div>
+          <div class="mob-menu-bottom">
+            <a class="link menu-contact-tel" href="tel:+380961111111">+38 096 111 11 11  
+            </a>
+            <a class="link menu-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com
+            </a>
+            <ul class="mob-social">
+              <li class="list mob-social__item">
+                <a href="" class="link mob-social__link ">Instagram</a></li>
+              <li class="list mob-social__item">
+                <a href="" class="link mob-social__link">Twitter</a></li>
+              <li class="list mob-social__item">
+                <a href="" class="link mob-social__link">Facebook</a></li>
+              <li class="list mob-social__item">
+                <a href="" class="link mob-social__link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </header> 
+    
+
   <main class="hero">
     <section class="section hero__section">
       <h1 class="hero__title">
@@ -522,6 +562,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mob-menu.js"></script>
 </body>
 
 </html>

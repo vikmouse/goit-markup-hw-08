@@ -1,6 +1,10 @@
 .site-nav {
 @include align();
   list-style: none;
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+  
 }
 
 .site-nav__item:not(:last-child) {
