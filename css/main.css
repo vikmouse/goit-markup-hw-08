@@ -303,7 +303,7 @@ body {
 .modal {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -321,13 +321,33 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-title {
   margin-bottom: 12px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1,3;
+  }
 }
 
 .modal__form {
@@ -420,6 +440,12 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .form-group__input {
+    width: 370px;
+  }
+}
+
 .form__checkbox {
   margin-bottom: 30px;
 }
@@ -436,8 +462,21 @@ body {
           justify-content: center;
   font-family: Roboto;
   font-size: 2vmin;
-  line-height: 1.71;
+  line-height: 1.17;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__icon {
@@ -466,9 +505,10 @@ body {
 
 @media screen and (min-width: 480px) {
   .checkbox__item {
+    margin: 2px;
     width: 16px;
     height: 15px;
-    margin: 8px;
+    font-size: 12px;
   }
 }
 
@@ -481,8 +521,21 @@ body {
   margin-left: 4px;
   font-family: Roboto;
   font-size: 3vmin;
-  line-height: 1.71;
+  line-height: 1.17;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .comment {
@@ -524,6 +577,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+  .comment {
+    width: 370px;
+  }
 }
 
 .modal-close {
@@ -1566,7 +1625,7 @@ body {
   margin-bottom: 0;
   margin-right: auto;
   margin-bottom: 20px;
-  padding: 15px 108px 15px 16px;
+  padding: 15px 16px;
   width: 90vw;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
