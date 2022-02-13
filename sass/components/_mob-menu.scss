@@ -3,6 +3,9 @@
     margin-left: auto;
     border-style: none;
     background-color: #ffffff;
+    @include tab {
+        display: none;
+    }
 }
 
 .menu-close-btn {
@@ -23,10 +26,11 @@
 
 .mob-menu {
     position: fixed;
-    z-index: 1;
+    top:0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    top:0;
+    z-index: 2;
     background-color: #ffffff;
     &__container {
         height: 100%;
@@ -106,7 +110,7 @@
     margin-bottom: 64px;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 7vmin;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--main-text-color);

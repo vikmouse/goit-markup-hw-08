@@ -1,12 +1,25 @@
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
+  flex-wrap: wrap;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width:767px) {
+    &__item:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+  }
+  @include tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    list-style: none;
+  }
   
 }
 
 
-.menu__item:not(:last-child) {
-  margin-right: 8px;
-}
+
 

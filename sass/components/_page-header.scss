@@ -4,6 +4,7 @@
 
 .page-header__container {
   @include align();
+  height: 80px;
 }
 
 .page-header__nav {
