@@ -5,106 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
     <link rel="stylesheet" href="./css/portfolio.css" />
-  </head> 
+  </head>
 
   <body>
     <header class="page-header">
-    <div class="container page-header__container">
-      <nav class="page-header__nav">
-        <a class="link" href="">
-          <article class="logo">Web<span class="logo__half--dark">Studio</span>
-          </article>
-        </a>
-        <ul class="site-nav">
-          <li class="site-nav__item">
-            <a class="site-nav__link active" href="./index.html">Студия </a>
-          </li>
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
+          <a class="link" href="">
+            <article class="logo">
+              Web<span class="logo__half--dark">Studio</span>
+            </article>
+          </a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link active" href="./index.html">Студия </a>
+            </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--current active" href="">Портфолио
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current active" href=""
+                >Портфолио
+              </a>
+            </li>
+
+            <li class="site-nav__item">
+              <a class="site-nav__link active" href="">Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-contact">
+          <li class="list-contact__item">
+            <a class="link-contact" href="mailto:info@devstudio.com">
+              <svg
+                class="link-contact__icon link-contact__icon--desk"
+                width="16"
+                height="12"
+              >
+                <use href="./image/icons.svg#envelope"></use></svg
+              >info@devstudio.com
+              <svg
+                class="link-contact__icon link-contact__icon--tab"
+                width="14"
+                height="10"
+              >
+                <use href="./image/icons.svg#icon-envelope-tab"></use>
+              </svg>
             </a>
           </li>
 
-          <li class="site-nav__item">
-            <a class="site-nav__link active" href="">Контакты </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list-contact">
-        <li class="list-contact__item">
-          <a class="link-contact" href="mailto:info@devstudio.com">
-            <svg class="link-contact__icon link-contact__icon--desk" width="16" height="12">
-              <use href="./image/icons.svg#envelope"></use>
-            </svg>info@devstudio.com
-            <svg class="link-contact__icon link-contact__icon--tab" width="14" height="10">
-              <use href="./image/icons.svg#icon-envelope-tab"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="list-contact__item">
-          <a class="link link-contact" href="tel:+380961111111">
-            <svg class="link-contact__icon link-contact__icon--desk" width="16" height="12">
-              <use href="./image/icons.svg#smartphone"></use>
-            </svg>+38 096 111 11 11
-            <svg class="link-contact__icon link-contact__icon--tab" width="14" height="10">
-              <use href="./image/icons.svg#mob-tab"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <button type="button" class="menu-open-btn" data-Menu-open>
-        <svg class="menu-icon" width="40" height="40">
-          <use href="./image/icons.svg#icon-menu-open"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="mob-menu is-hidden" data-Menu>
-      <button class="menu-close-btn" data-Menu-close>
-        <svg class="menu-icon" width="40" height="40">
-        <use href="./image/icons.svg#icon-menu-close"></use>
-      </svg>
-    </button>
-      <div class="container mob-menu__container">
-      <div class="mob-menu-top">
-        <ul class="mob-menu-list">
-          <li class="mob-menu-list__item">
-            <a class="mob-menu-list__link" href="./index.html">Студия </a>
-          </li>
-  
-          <li class="mob-menu-list__item">
-            <a class="mob-menu-list__link mob-menu-list__link--curent" href="">Портфолио
+          <li class="list-contact__item">
+            <a class="link link-contact" href="tel:+380961111111">
+              <svg
+                class="link-contact__icon link-contact__icon--desk"
+                width="16"
+                height="12"
+              >
+                <use href="./image/icons.svg#smartphone"></use></svg
+              >+38 096 111 11 11
+              <svg
+                class="link-contact__icon link-contact__icon--tab"
+                width="14"
+                height="10"
+              >
+                <use href="./image/icons.svg#mob-tab"></use>
+              </svg>
             </a>
           </li>
-  
-          <li class="mob-menu-list__item">
-            <a class="mob-menu-list__link" href="">Контакты </a>
-          </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-Menu-open>
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./image/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
+      <div class="mob-menu is-hidden" data-Menu>
+        <button class="menu-close-btn" data-Menu-close>
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./image/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <div class="container mob-menu__container">
+          <div class="mob-menu-top">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="./index.html">Студия </a>
+              </li>
+
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link mob-menu-list__link--curent"
+                  href=""
+                  >Портфолио
+                </a>
+              </li>
+
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="">Контакты </a>
+              </li>
+            </ul>
+          </div>
           <div class="mob-menu-bottom">
-            <a class="link menu-contact-tel" href="tel:+380961111111">+38 096 111 11 11  
+            <a class="link menu-contact-tel" href="tel:+380961111111"
+              >+38 096 111 11 11
             </a>
-            <a class="link menu-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com
+            <a class="link menu-contact-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com
             </a>
             <ul class="mob-social">
               <li class="list mob-social__item">
-                <a href="" class="link mob-social__link ">Instagram</a></li>
+                <a href="" class="link mob-social__link">Instagram</a>
+              </li>
               <li class="list mob-social__item">
-                <a href="" class="link mob-social__link">Twitter</a></li>
+                <a href="" class="link mob-social__link">Twitter</a>
+              </li>
               <li class="list mob-social__item">
-                <a href="" class="link mob-social__link">Facebook</a></li>
+                <a href="" class="link mob-social__link">Facebook</a>
+              </li>
               <li class="list mob-social__item">
-                <a href="" class="link mob-social__link">LinkedIn</a></li>
+                <a href="" class="link mob-social__link">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
     </header>
 
     <main class="maine-page">
@@ -114,7 +147,9 @@
 
           <ul class="menu maine-page__menu">
             <li class="menu__item">
-              <button type="button" class="menu__button menu__button--current ">Все</button>
+              <button type="button" class="menu__button menu__button--current">
+                Все
+              </button>
             </li>
             <li class="menu__item">
               <button type="button" class="menu__button">Веб-сайты</button>
@@ -136,37 +171,39 @@
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
                     <picture>
-                      <source srcset="
-                      ./image/img(1)-desk-1x.jpg 1x, 
-                      ./image/img(1)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(1)-desk-1x.jpg 1x,
+                          ./image/img(1)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(1)-tab-1x.jpg 1x, 
-                        ./image/img(1)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(1)-tab-1x.jpg 1x,
+                          ./image/img(1)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(1)-mob-1x.jpg 1x, 
-                          ./image/img(1)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(1)-desk-1x.jpg"
-                    alt="тех.отдел" 
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(1)-mob-1x.jpg 1x,
+                          ./image/img(1)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img src="./image/img(1)-desk-1x.jpg" alt="тех.отдел" />
                     </picture>
 
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                      конкурентов.
+                    </span>
                   </div>
                   <div class="poster-list__content">
                     <h3 class="poster-list__title">Технокряк</h3>
@@ -178,40 +215,45 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(2)-desk-1x.jpg 1x, 
-                      ./image/img(2)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(2)-desk-1x.jpg 1x,
+                          ./image/img(2)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(2)-tab-1x.jpg 1x, 
-                        ./image/img(2)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(2)-tab-1x.jpg 1x,
+                          ./image/img(2)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(2)-mob-1x.jpg 1x, 
-                          ./image/img(2)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(2)-desk-1x.jpg"
-                    alt="баскетболисты в борьбе"                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(2)-mob-1x.jpg 1x,
+                          ./image/img(2)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./image/img(2)-desk-1x.jpg"
+                        alt="баскетболисты в борьбе"
+                      />
                     </picture>
-                  
+
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
                       цифрового шпионажа и атак на защищённые сервера
-                      конкурентов.</span
-                    >
+                      конкурентов.
+                    </span>
                   </div>
-                  <div class="">
+                  <div class="poster-list__content">
                     <h3 class="poster-list__title">
                       Постер New Orlean vs Golden Star
                     </h3>
@@ -223,32 +265,36 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(3)-desk-1x.jpg 1x, 
-                      ./image/img(3)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(3)-desk-1x.jpg 1x,
+                          ./image/img(3)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(3)-tab-1x.jpg 1x, 
-                        ./image/img(3)-tab-2x.jpg 2x" 
-                        media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(3)-mob-1x.jpg 1x, 
-                          ./image/img(3)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(2)-desk-1x.jpg"
-                    alt="лого р-на морепродуктов"                    />
-                    </picture>
 
+                      <source
+                        srcset="
+                          ./image/img(3)-tab-1x.jpg 1x,
+                          ./image/img(3)-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(3)-mob-1x.jpg 1x,
+                          ./image/img(3)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./image/img(2)-desk-1x.jpg"
+                        alt="лого р-на морепродуктов"
+                      />
+                    </picture>
 
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
@@ -267,31 +313,35 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(4)-desk-1x.jpg 1x, 
-                      ./image/img(4)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(4)-desk-1x.jpg 1x,
+                          ./image/img(4)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(4)-tab-1x.jpg 1x, 
-                        ./image/img(4)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(4)-tab-1x.jpg 1x,
+                          ./image/img(4)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(4)-mob-1x.jpg 1x, 
-                          ./image/img(4)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(4)-desk-1x.jpg"
-                    alt="стерео наушники"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(4)-mob-1x.jpg 1x,
+                          ./image/img(4)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./image/img(4)-desk-1x.jpg"
+                        alt="стерео наушники"
+                      />
                     </picture>
 
                     <span class="poster-list__text"
@@ -311,31 +361,32 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(5)-desk-1x.jpg 1x, 
-                      ./image/img(5)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(5)-desk-1x.jpg 1x,
+                          ./image/img(5)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(5)-tab-1x.jpg 1x, 
-                        ./image/img(5)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(5)-tab-1x.jpg 1x,
+                          ./image/img(5)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(5)-mob-1x.jpg 1x, 
-                          ./image/img(5)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(5)-desk-1x.jpg"
-                    alt="две коробки"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(5)-mob-1x.jpg 1x,
+                          ./image/img(5)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img src="./image/img(5)-desk-1x.jpg" alt="две коробки" />
                     </picture>
 
                     <span class="poster-list__text"
@@ -355,31 +406,32 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(6)-desk-1x.jpg 1x, 
-                      ./image/img(6)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(6)-desk-1x.jpg 1x,
+                          ./image/img(6)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(6)-tab-1x.jpg 1x, 
-                        ./image/img(6)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(6)-tab-1x.jpg 1x,
+                          ./image/img(6)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(6)-mob-1x.jpg 1x, 
-                          ./image/img(6)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(6)-desk-1x.jpg"
-                    alt="монитор"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(6)-mob-1x.jpg 1x,
+                          ./image/img(6)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img src="./image/img(6)-desk-1x.jpg" alt="монитор" />
                     </picture>
 
                     <span class="poster-list__text"
@@ -390,7 +442,9 @@
                     >
                   </div>
                   <div class="poster-list__content">
-                    <h3 class="poster-list__title">Inspiration has no Borders</h3>
+                    <h3 class="poster-list__title">
+                      Inspiration has no Borders
+                    </h3>
                     <p class="poster-list__direction">Веб-сайт</p>
                   </div>
                 </a>
@@ -399,33 +453,34 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(7)-desk-1x.jpg 1x, 
-                      ./image/img(7)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(7)-desk-1x.jpg 1x,
+                          ./image/img(7)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(7)-tab-1x.jpg 1x, 
-                        ./image/img(7)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(7)-tab-1x.jpg 1x,
+                          ./image/img(7)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(7)-mob-1x.jpg 1x, 
-                          ./image/img(7)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(7)-desk-1x.jpg"
-                    alt="журнал"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(7)-mob-1x.jpg 1x,
+                          ./image/img(7)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img src="./image/img(7)-desk-1x.jpg" alt="журнал" />
                     </picture>
-                    
+
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -443,33 +498,37 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(8)-desk-1x.jpg 1x, 
-                      ./image/img(8)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(8)-desk-1x.jpg 1x,
+                          ./image/img(8)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(8)-tab-1x.jpg 1x, 
-                        ./image/img(8)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(8)-tab-1x.jpg 1x,
+                          ./image/img(8)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(8)-mob-1x.jpg 1x, 
-                          ./image/img(8)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(8)-desk-1x.jpg"
-                    alt="бирка на верёвке"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(8)-mob-1x.jpg 1x,
+                          ./image/img(8)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./image/img(8)-desk-1x.jpg"
+                        alt="бирка на верёвке"
+                      />
                     </picture>
-                    
+
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -487,33 +546,37 @@
               <li class="poster-list__item">
                 <a class="poster-list__link" href="">
                   <div class="poster-list__action">
-
                     <picture>
-                      <source srcset="
-                      ./image/img(9)-desk-1x.jpg 1x, 
-                      ./image/img(9)-desk-2x.jpg 2x" 
-                      media="(min-width: 1200px)"
+                      <source
+                        srcset="
+                          ./image/img(9)-desk-1x.jpg 1x,
+                          ./image/img(9)-desk-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
                       />
-                      
-                        <source srcset="
-                        ./image/img(9)-tab-1x.jpg 1x, 
-                        ./image/img(9)-tab-2x.jpg 2x" 
+
+                      <source
+                        srcset="
+                          ./image/img(9)-tab-1x.jpg 1x,
+                          ./image/img(9)-tab-2x.jpg 2x
+                        "
                         media="(min-width: 768px)"
-                        />
-        
-        
-                          <source srcset="
-                          ./image/img(9)-mob-1x.jpg 1x, 
-                          ./image/img(9)-mob-2x.jpg 2x" 
-                          media="(min-width: 320px)"
-                          />
-        
-                          <img                   
-                    src="./image/img(9)-desk-1x.jpg"
-                    alt="набор текста на ноуте"
-                    />
+                      />
+
+                      <source
+                        srcset="
+                          ./image/img(9)-mob-1x.jpg 1x,
+                          ./image/img(9)-mob-2x.jpg 2x
+                        "
+                        media="(min-width: 320px)"
+                      />
+
+                      <img
+                        src="./image/img(9)-desk-1x.jpg"
+                        alt="набор текста на ноуте"
+                      />
                     </picture>
-                    
+
                     <span class="poster-list__text"
                       >Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -536,18 +599,21 @@
       <div class="container footer__container">
         <div class="footer-wrapper-mob">
           <div class="footer-wrapper">
-            <article class="logo footer__logo">Web<span class="logo__half--light">Studio</span>
+            <article class="logo footer__logo">
+              Web<span class="logo__half--light">Studio</span>
             </article>
             <address>
               <ul class="contact-card">
                 <li class="contact-card__item">
-                  <p class="contact-card__text contact-card__text--inversion">г. Киев, пр-т Леси Украинки, 26</p>
+                  <p class="contact-card__text contact-card__text--inversion">
+                    г. Киев, пр-т Леси Украинки, 26
+                  </p>
                 </li>
-  
+
                 <li class="contact-card__item">
                   <p class="contact-card__text">info@devstudio.com</p>
                 </li>
-  
+
                 <li class="contact-card__item">
                   <p class="contact-card__text">+38 096 111 11 11</p>
                 </li>
@@ -555,59 +621,63 @@
             </address>
           </div>
           <div class="footer-wrapper footer__footer-wrapper">
-          <h4 class="offer-title">присоединяйтесь</h4>
-          <ul class="social-set social-set--centered">
-            <li class="social-set__item">
-              <a class="social-set__link social-set__link--inversion" href="">
-                <svg class="social-set__icon" width="20" height="20">
-                  <use href="./image/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-set__item">
-              <a class="social-set__link social-set__link--inversion" href="">
-                <svg class="social-set__icon" width="20" height="20">
-                  <use href="./image/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-set__item">
-              <a class="social-set__link social-set__link--inversion" href="">
-                <svg class="social-set__icon" width="20" height="20">
-                  <use href="./image/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-  
-            <li class="social-set__item">
-              <a class="social-set__link social-set__link--inversion" href="">
-                <svg class="social-set__icon" width="20" height="20">
-                  <use href="./image/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <h4 class="offer-title">присоединяйтесь</h4>
+            <ul class="social-set social-set--centered">
+              <li class="social-set__item">
+                <a class="social-set__link social-set__link--inversion" href="">
+                  <svg class="social-set__icon" width="20" height="20">
+                    <use href="./image/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-set__item">
+                <a class="social-set__link social-set__link--inversion" href="">
+                  <svg class="social-set__icon" width="20" height="20">
+                    <use href="./image/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-set__item">
+                <a class="social-set__link social-set__link--inversion" href="">
+                  <svg class="social-set__icon" width="20" height="20">
+                    <use href="./image/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-set__item">
+                <a class="social-set__link social-set__link--inversion" href="">
+                  <svg class="social-set__icon" width="20" height="20">
+                    <use href="./image/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-          <div class="footer-wrapper footer-wrapper--zero-bottom">
-            <h4 class="offer-title">Подпишитесь на рассылку
-            </h4>
-            <form action="#">
-              <div role="group" class="footer-form">
-                <input class="footer-form__input" type="email" name="e-mail" placeholder="E-mail">
-                <button type="submit" class="button footer-form__button">Подписаться
-                  <svg class="icon-send" width="24" height="24">
-                    <use href="./image/icons.svg#send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-  
-          </div>
+        <div class="footer-wrapper footer-wrapper--zero-bottom">
+          <h4 class="offer-title">Подпишитесь на рассылку</h4>
+          <form action="#">
+            <div role="group" class="footer-form">
+              <input
+                class="footer-form__input"
+                type="email"
+                name="e-mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button footer-form__button">
+                Подписаться
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./image/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      </footer>
+    </footer>
   </body>
   <script src="./js/mob-menu.js"></script>
-</html> 
+</html>
