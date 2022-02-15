@@ -48,9 +48,15 @@
   margin-bottom: 0;
 }
 .footer-wrapper-mob {
+  margin-bottom: 60px;
   @include tab {
     display: flex;
     justify-content: space-around;
+  }
+  @include desk {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
 
 }

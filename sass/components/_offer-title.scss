@@ -6,4 +6,7 @@
   text-transform: uppercase;
   color: var(--third-text-color);
   text-align: center;
+  @include desk {
+    text-align: start;
+  }
 }

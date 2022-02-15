@@ -1,16 +1,18 @@
 .poster-list {
+  
 
   list-style: none;
   @include tab {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
 
 .poster-list__item {
+  
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -18,13 +20,12 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   @include tab {
-    flex-basis: calc(100% / 2-30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
     @include desk {
-      flex-basis: calc(100% / 3-30px);
-      margin-top: 30px;
-      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+
 
     }
   }

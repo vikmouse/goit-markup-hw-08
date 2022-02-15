@@ -9,8 +9,10 @@
 }
 
 .menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     display: block;
-    margin-left: auto;
     border-style: none;
     background-color: #ffffff;
 }
@@ -26,7 +28,6 @@
 
 .mob-menu {
     position: fixed;
-    overflow: hidden;
     top:0;
     left: 0;
     width: 100vw;
@@ -35,7 +36,7 @@
     background-color: #ffffff;
     &__container {
         height: 100%;
-        padding: 32px 40px;
+        padding: 48px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -52,13 +53,6 @@
 }
 
 
-.mob-menu-top {
-    margin-top: 32px;
-}
-
-.mob-menu-bottom {
-    padding-bottom: 48px;
-}
 
 .mob-menu-list {
     list-style: none;
@@ -71,7 +65,7 @@
     
     font-family: Roboto;
     font-weight: 500;
-    font-size: 13vmin;
+    font-size: 11vmin;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.02em;
@@ -97,7 +91,7 @@
     margin-bottom: 32px;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 8vmin;
+    font-size: 7vmin;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -111,7 +105,7 @@
     margin-bottom: 64px;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 7vmin;
+    font-size: 6vmin;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
@@ -122,16 +116,18 @@
 
 .mob-social {
     display: flex;
-}
-
-.mob-social__item:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
-}
-
-.mob-social__item:not(:first-child) {
-    padding-left: 10px;
-    
+    &__item {
+        padding: 5px;
+    }
+    @include mob {
+    &__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+    &__item:not(:first-child) {
+        padding-left: 10px;
+    }
+    }
 }
 
 .mob-social__link {

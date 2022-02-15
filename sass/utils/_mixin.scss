@@ -1,4 +1,4 @@
-@mixin margin($top:0, $left:auto, $bottom:0, $right:auto) {
+@mixin margin($top:null, $left:auto, $bottom:null, $right:auto) {
 margin-top: $top;
 margin-left: $left;
 margin-bottom: $bottom;
