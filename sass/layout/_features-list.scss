@@ -47,10 +47,7 @@
 }
 
 .features-list__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+fill: inherit;
 }
 
 .features-list__contents {
