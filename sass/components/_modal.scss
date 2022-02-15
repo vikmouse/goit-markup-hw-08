@@ -225,6 +225,9 @@
   @include mob {
     width: 370px;
   }
+  @include desk {
+    width: 448px;
+  }
 }
 
 .modal-close {

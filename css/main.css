@@ -588,6 +588,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .comment {
+    width: 448px;
+  }
+}
+
 .modal-close {
   position: absolute;
   top: 8px;
