@@ -21,13 +21,17 @@
   margin-bottom: 60px;
   padding: 0;
   @include desk{
-    margin: 0;
+  margin: 0;
   }
 
 }
 
 .footer__footer-wrapper {
-  
+  margin-bottom: 60px;
+  @include tab {
+    margin: 0;
+  }
+
   @include desk {
     margin-right: 93px;
     margin-left: 70px;
@@ -45,13 +49,18 @@
 }
 
 .footer-wrapper--zero-bottom {
-  margin-bottom: 0;
-}
-.footer-wrapper-mob {
   margin-bottom: 60px;
+  @include tab {
+    margin: 0;
+  }
+}
+.footer-wrapper-tab {
+  
   @include tab {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
   }
   @include desk {
     display: flex;
