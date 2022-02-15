@@ -443,6 +443,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .form-group__input {
+    width: 448px;
+  }
+}
+
 .form__checkbox {
   margin-bottom: 30px;
 }
