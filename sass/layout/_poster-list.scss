@@ -102,6 +102,13 @@
 
 }
 
+.poster__wrapper {
+  display: block;
+  width: 306px;
+  height: 72px;
+ @include margin();
+}
+
 .poster-list__content {
   padding: 20px 24px 20px 24px;
 
@@ -110,9 +117,10 @@
   border-left: 1px solid #eeeeee;
 }
 .poster-list__title {
+  margin-bottom: 4px; 
   font-weight: 700;
   font-size: 5vmin;
-  line-height: 2;
+  line-height: 171%;
   letter-spacing: 0.06em;
   color: var(--second-btn-color);
   @include mob {
@@ -122,8 +130,6 @@
 }
 
 .poster-list__direction {
-  margin-top: 4px;
-
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
