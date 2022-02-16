@@ -303,8 +303,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 100vw;
-  height: 70vh;
+  max-width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -320,13 +320,6 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -501,14 +494,14 @@ body {
   height: 2vmin;
   border: 1px solid #000;
   border-radius: 2px;
-  margin: 2px;
+  margin-right: 2px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) {
   .checkbox__item {
-    margin: 2px;
+    margin-right: 2px;
     width: 16px;
     height: 15px;
     font-size: 12px;
@@ -648,9 +641,11 @@ body {
 
 .menu-icon {
   fill: var(--main-text-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-icon:hover, .menu-icon:focus {
+.menu-icon:hover {
   fill: var(--accent-color);
 }
 
@@ -1503,13 +1498,7 @@ body {
 }
 
 .footer__footer-wrapper {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__footer-wrapper {
-    margin: 0;
-  }
+  margin: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1531,13 +1520,11 @@ body {
 }
 
 .footer-wrapper--zero-bottom {
-  margin-bottom: 60px;
+  margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-wrapper--zero-bottom {
-    margin: 0;
-  }
+.footer-wrapper-tab {
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {

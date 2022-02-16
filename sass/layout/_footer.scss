@@ -27,16 +27,11 @@
 }
 
 .footer__footer-wrapper {
-  margin-bottom: 60px;
-  @include tab {
     margin: 0;
-  }
-
   @include desk {
     margin-right: 93px;
     margin-left: 70px;
   }
-
 }
 
 .footer__container {
@@ -49,12 +44,11 @@
 }
 
 .footer-wrapper--zero-bottom {
-  margin-bottom: 60px;
-  @include tab {
-    margin: 0;
-  }
+  margin: 0;
 }
+
 .footer-wrapper-tab {
+  margin-bottom: 60px;
   
   @include tab {
     display: flex;
