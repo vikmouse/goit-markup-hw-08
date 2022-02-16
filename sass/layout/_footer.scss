@@ -20,10 +20,9 @@
 .footer-wrapper {
   margin-bottom: 60px;
   padding: 0;
-  @include desk{
-  margin: 0;
+  @include tab {
+    margin: 0;
   }
-
 }
 
 .footer__footer-wrapper {

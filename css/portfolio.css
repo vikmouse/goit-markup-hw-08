@@ -850,7 +850,7 @@ body {
   padding: 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-wrapper {
     margin: 0;
   }
